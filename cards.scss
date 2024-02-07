@@ -1,17 +1,22 @@
 .cards {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, $card-width);
+  grid-template-columns: repeat(2, $card-width + 20px);
   column-gap: 20px;
   row-gap: 40px;
   place-content: center;
 
   @media (min-width: 1000px) {
-    grid-template-columns: repeat(4, $card-width);
+    grid-template-columns: repeat(4, $card-width + 20px);
+  }
+
+  &__name {
+    padding-top: 8px;
   }
   
   &__person {
-    max-width: $card-width;
+  padding: 10px;
+    
     position: relative;
     border-radius: 12px;
     transition-duration: 1s;
@@ -36,7 +41,8 @@
   &__rank {
     position: absolute;
     right: 0;
-    top: $card-width / 2;
+    top: $card-width / 2 - 6px;
+    right: 20px;
     background-color: #fff;
     border-radius: 50%;
     width: 32px;
@@ -48,7 +54,6 @@
   }
   
   &__details {
-    margin-top: 8px;
     margin-bottom: 9px;
     font-family: Arial;
     font-size: 20px;
@@ -59,7 +64,7 @@
 
   &__extra {
     visibility: hidden;
-    margin: 0;
+    padding-top: 9px;
     font-size: 18px;
     color: #000;
   }
