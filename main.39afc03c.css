@@ -1,15 +1,16 @@
 .cards {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 220px);
   column-gap: 20px;
-  row-gap: 40px;
   place-content: center; }
   @media (min-width: 1000px) {
     .cards {
-      grid-template-columns: repeat(4, 200px); } }
+      grid-template-columns: repeat(4, 220px); } }
+  .cards__name {
+    padding-top: 8px; }
   .cards__person {
-    max-width: 200px;
+    padding: 10px;
     position: relative;
     border-radius: 12px;
     transition-duration: 1s;
@@ -26,7 +27,8 @@
   .cards__rank {
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 94px;
+    right: 20px;
     background-color: #fff;
     border-radius: 50%;
     width: 32px;
@@ -36,7 +38,6 @@
     font-size: 20px;
     line-height: 32px; }
   .cards__details {
-    margin-top: 8px;
     margin-bottom: 9px;
     font-family: Arial;
     font-size: 20px;
@@ -45,7 +46,7 @@
     color: #2F4F4F; }
   .cards__extra {
     visibility: hidden;
-    margin: 0;
+    padding-top: 9px;
     font-size: 18px;
     color: #000; }
 
