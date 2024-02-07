@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: repeat(2, $card-width + 20px);
   column-gap: 20px;
-  row-gap: 40px;
   place-content: center;
 
   @media (min-width: 1000px) {
